@@ -1,0 +1,384 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    margin: 37px 113px 55px 114px;
+}
+
+.contactUs {
+    width: 100%;
+    background: url("img/ContactUsBg.svg") no-repeat;
+    background-size: cover;
+}
+
+.contactUs_container {
+    padding: 51px 293px 49px;
+}
+
+.heading {
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 74px;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.text {
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    opacity: 0.6;
+}
+
+.contact_container {
+    padding: 57px 213px 0;
+}
+
+.contact_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact_info {
+    width: 301px;
+}
+
+.contact_info li {
+    display: flex;
+    align-items: center;
+}
+
+.contact_heading {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #1F3F68;
+    margin-bottom: 24px;
+}
+
+.contact_text {
+    font-weight: 300;
+    color: #1F3F68;
+    opacity: 0.6;
+    margin-bottom: 40px;
+    vertical-align: middle;
+}
+
+.contact_img {
+    margin-right: 18px;
+}
+
+.contact_info .contact_heading:nth-child(2) {
+    margin-top: 56px;
+}
+
+.contact_text .online {
+    margin-bottom: 0;
+}
+
+.phone,
+.online {
+    list-style: none;
+}
+
+.phone li:first-child,
+.online li:first-child {
+    margin-bottom: 16px;
+}
+
+.contact_form {
+    background: #FFFFFF;
+    box-shadow: 5px 10px 50px rgba(16, 112, 177, 0.2);
+    border-radius: 10px;
+    max-width: 540px;
+}
+
+.form_container {
+    padding: 56px;
+}
+
+.form_heading {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 48px;
+    color: black;
+}
+
+.form_label {
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 8px;
+    color: black;
+    display: block;
+}
+
+.input_field {
+    opacity: 0.4;
+    border: 1px solid #356EAD;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 21px 42px;
+    margin-bottom: 32px;
+    width: 100%;
+}
+
+
+.submit_btn {
+    background: #5A98D0;
+    border: none;
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+    border-radius: 10px;
+    width: 100%;
+    padding: 23px 183px;
+    margin-top: 72px;
+    font-weight: 500;
+    box-sizing: border-box;
+    color: #FFFFFF;
+}
+
+.map {
+    background: url(img/map.png) no-repeat;
+    background-size: cover;
+    margin: 96px 213px 112px;
+    height: 480px;
+}
+
+.footer {
+    background: #316099;
+}
+
+.footer_top_container {
+    padding: 91px 113px 96px;
+}
+
+.footer_bottom_container {
+    padding: 64px 113px;
+}
+
+.footer_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer_heading {
+    max-width: 340px;
+    margin-bottom: 32px;
+    font-size: 36px;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+}
+
+.footer_text {
+    max-width: 494px;
+    letter-spacing: 0.05em;
+}
+
+.footer_button {
+    background: #5A98D0;
+    text-decoration: none;
+    text-align: center;
+    padding: 15px 80px;
+    color: #FFFFFF;
+}
+
+.footer_line {
+    opacity: 0.4;
+    border: 1px solid #FFFFFF;
+}
+
+.footer_bottom {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin-right: 32px;
+}
+
+.list_item {
+    margin-right: 32px;
+    letter-spacing: 0.05em;
+    flex-basis: 33.33%;
+    display: flex;
+}
+
+.list_item:first-child::before {
+    display: block;
+    content: 'A.';
+    margin-right: 16px;
+}
+
+.list_item:nth-child(2)::before {
+    margin-right: 16px;
+    content: 'T.';
+    display: block;
+}
+
+.list_item:last-child::before {
+    margin-right: 16px;
+    content: "E.";
+    display: block;
+}
+
+.footer_copy {
+    margin-top: 64px;
+    text-align: left;
+}
+
+@media (max-width: 1024px) {
+    .navigation {
+        margin: 10px 32px 41px;
+    }
+
+    .contactUs_container {
+        padding: 51px 124px 21px;
+    }
+
+    .contact_container {
+        margin: 64px auto;
+        padding: 0;
+    }
+
+    .contact_content {
+        flex-direction: column;
+    }
+
+    .contact_info {
+        margin-bottom: 64px;
+    }
+
+    .map {
+        margin: 64px 0;
+    }
+
+    .footer_bottom_container {
+        padding: 64px 125px;
+    }
+
+    .footer_top_container {
+        padding: 47px 124px 64px;
+    }
+
+    .footer_text {
+        max-width: 336px;
+    }
+
+    .footer_button {
+        padding: 3px 32px
+    }
+
+    .footer_bottom {
+        flex-direction: column;
+    }
+
+    .list_item {
+        margin-bottom: 25px;
+    }
+
+    .list_item:last-child {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 640px) {
+    .navigation {
+        margin: 10px 16px 25px;
+    }
+
+    .contactUs_container {
+        padding: 48px 17px 61px;
+    }
+
+    .heading {
+        font-size: 24px;
+        line-height: 28px;
+        margin-bottom: 32px;
+    }
+
+    .text {
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    .contact_container {
+        margin: 48px auto;
+    }
+
+    .contact_info {
+        margin-bottom: 32px;
+    }
+
+    .form_container {
+        padding: 36px;
+    }
+
+    .contact_form {
+        max-width: 340px;
+    }
+
+    .submit_btn {
+        margin-top: 46px;
+        padding: 15px 60px;
+    }
+
+    .map {
+        margin: 32px 0;
+        height: 350px;
+    }
+
+    .footer_top_container {
+        padding: 18px 16px 48px;
+    }
+
+    .footer_top {
+        flex-direction: column;
+    }
+
+    .footer_heading {
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+    }
+
+    .footer_text {
+        text-align: center;
+    }
+
+    .footer_button {
+        margin-top: 33px;
+    }
+
+    .footer_bottom_container {
+        padding: 32px 16px;
+    }
+
+    .list_item {
+        margin-bottom: 17px;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .list_item:last-child {
+        margin-bottom: 0;
+    }
+
+    .footer_copy {
+        margin-top: 37px;
+        text-align: center;
+    }
+}
